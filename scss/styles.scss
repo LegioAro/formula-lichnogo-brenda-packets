@@ -1,0 +1,16 @@
+// Global
+@import './global/fonts';
+@import './global/var';
+@import './global/reset';
+@import './global/global';
+
+//Moduls
+@import './moduls/btn';
+@import './moduls/modal';
+@import './moduls/progressbar';
+
+//Sections
+@import './sections/header';
+@import './sections/packets';
+@import './sections/price';
+@import './sections/footer';

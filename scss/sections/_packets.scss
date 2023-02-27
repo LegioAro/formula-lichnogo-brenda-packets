@@ -1,0 +1,118 @@
+.packets {
+  margin-bottom: 140px;
+  position: relative;
+  z-index: 1;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 110px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__item-img {
+    width: 100%;
+    max-width: 110px;
+    margin-right: 20px;
+    display: flex;
+    flex: 0 0 auto;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: calc(100% + 4px);
+      left: 2.5px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 2px;
+      background-color: #717272;
+      border: 0.3px solid #939394;
+    }
+
+    img {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &__item-info {
+    padding-bottom: 4px;
+  }
+
+  &__item-title {
+    margin-bottom: 26px;
+    font-size: 16.16px;
+    line-height: 125%;
+    margin: auto 0 26px;
+  }
+
+  &__item-price {
+  }
+
+  &__item-price-text {
+    font-weight: 800;
+    font-size: 17.5964px;
+    line-height: 125%;
+    color: #ffffff;
+  }
+
+  &__item-price-num {
+    font-family: var(--font-bold);
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 22.7348px #000000;
+  }
+}
+
+@media (max-width: 1050px) {
+  .packets {
+    &__wrapper {
+      grid-column-gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .packets {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 60px;
+      grid-row-gap: 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .packets {
+    margin-bottom: 70px;
+    &__wrapper {
+      grid-column-gap: 30px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .packets {
+    &__wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 350px;
+      margin: 0 auto;
+      grid-row-gap: 30px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .packets {
+    &__item-img {
+      margin-right: 10px;
+    }
+  }
+}

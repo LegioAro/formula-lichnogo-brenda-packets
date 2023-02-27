@@ -1,0 +1,37 @@
+body {
+  font-family: var(--font-text);
+  font-weight: 400;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  position: relative;
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.body-dec {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  display: flex;
+
+  background: linear-gradient(0deg, #0c0501, #0c0501);
+  pointer-events: none;
+  mix-blend-mode: lighten;
+}
+
+.container {
+  width: 100%;
+  max-width: 1050px;
+  padding: 0 15px;
+  margin: 0 auto;
+  &--big {
+    max-width: 1210px;
+  }
+}
+
+.--select {
+  color: var(--color-select);
+}
